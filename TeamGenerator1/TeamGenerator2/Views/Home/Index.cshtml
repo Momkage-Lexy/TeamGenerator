@@ -1,8 +1,16 @@
-﻿@{
+﻿@model Homework1.Models.Names
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+ <form asp-action="index" method="get">
+    <div>
+        <label asp-for="Name" class="formLabel">Your name:</label>
+        <input asp-for="Name" class="formInput" />
+    </div>
+    <div>
+        <label asp-for="TeamSize" class="formLabel">Team Size :</label>
+        <input asp-for="TeamSize" class="formInput" />
+    </div>
+    <button type="submit" class="formButton">Get Teams</button>
+ </form>
