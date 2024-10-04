@@ -9,7 +9,7 @@ public class HomeController : Controller
 {
     public IActionResult Index(Names n)
     {
-        Console.WriteLine(n.ToString());
+        Debug.WriteLine(n.ToString());
         return View();
     }
 }
