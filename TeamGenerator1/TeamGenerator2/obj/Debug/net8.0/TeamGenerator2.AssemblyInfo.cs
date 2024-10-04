@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TeamGenerator2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+58d8bab8fe7d0838d78783c239b7deb7e0cc0a53")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+46e73361ddaf987407fcf503b69a0fbdc8ef83bf")]
 [assembly: System.Reflection.AssemblyProductAttribute("TeamGenerator2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TeamGenerator2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
