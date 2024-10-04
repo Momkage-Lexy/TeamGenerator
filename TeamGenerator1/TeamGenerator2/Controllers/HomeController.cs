@@ -9,7 +9,10 @@ public class HomeController : Controller
 {
     public IActionResult Index(Names n)
     {
+        if(ModelState.IsValid){
+            return View("Success", n);
+        }
         Debug.WriteLine(n.ToString());
-        return View();
+        return View(n);
     }
 }

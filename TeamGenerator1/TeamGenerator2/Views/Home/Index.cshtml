@@ -4,13 +4,19 @@
 }
 
  <form asp-action="index" method="get">
-    <div>
+    <div class="nameFields">
         <label asp-for="Name" class="formLabel">Your name:</label>
-        <input asp-for="Name" class="formInput" />
+        <input asp-for="Name" id="name" class="formInput" name="Names[0]" />
     </div>
-    <div>
+
+    @*Calls js onclick to add another textbox for a name*@
+    <input type="button" onclick="addNameField()">add</input>
+    <div id="newField">
+        @*new textbox goes here*@
+    </div>
+    <div class="teamFields">
         <label asp-for="TeamSize" class="formLabel">Team Size :</label>
-        <input asp-for="TeamSize" class="formInput" />
+        <input asp-for="TeamSize" id="teamSize" class="formInput" name="teamSize" />
     </div>
     <button type="submit" class="formButton">Get Teams</button>
  </form>
