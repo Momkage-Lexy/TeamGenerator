@@ -9,6 +9,7 @@ public class Names
     [Required(ErrorMessage = "Name is required")]
     public int TeamSize { get; set;}
 
+
     public override string ToString()
     {
         return $"{Name} {TeamSize}";
