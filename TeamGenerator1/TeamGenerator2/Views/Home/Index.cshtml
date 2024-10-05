@@ -3,10 +3,10 @@
     ViewData["Title"] = "Home Page";
 }
 
- <form asp-action="index" method="get">
+ <form asp-action="idk" method="get">
     <div class="nameFields">
         <label asp-for="Name" class="formLabel">Your name:</label>
-        <input asp-for="Name" id="name" class="formInput" name="Names[0]" />
+        <input asp-for="Name" id="name" class="formInput" name="Names[0]" method="post" />
     </div>
 
     @*Calls js onclick to add another textbox for a name*@

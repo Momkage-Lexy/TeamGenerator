@@ -3,6 +3,8 @@
 
 // Write your JavaScript code.
 
+let nameCounter = 1;
+
 function addNameField() {
     // Create element
     const div = document.createElement('div');
@@ -15,4 +17,6 @@ function addNameField() {
     
     // Add to div 'newField' on form
     document.getElementById('newField').appendChild(div);
+
+    nameCounter++;
 }
