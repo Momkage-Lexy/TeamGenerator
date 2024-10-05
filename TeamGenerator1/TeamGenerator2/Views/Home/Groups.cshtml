@@ -13,8 +13,8 @@
 @* Loop through the number of groups (divs) *@
 @for (int i = 0; i < teamSize; i++)
 {
-    <div>
-        <h3>Team @i</h3>
+    <div class="group">
+        <div class="groupContent"></div>
         <ul>
             @* Insert names into the current div/team *@
             @for (int j = 0; j < namesPerTeam && nameIndex < totalNames; j++)
@@ -25,4 +25,5 @@
         </ul>
     </div>
 }
-<button id="teamNames">Name Teams</button>
+<button id="teamNames" onclick="getTeamName()">Name Teams</button>
+

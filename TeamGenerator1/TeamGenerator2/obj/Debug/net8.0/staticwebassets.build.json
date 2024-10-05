@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5Q3FnLVOzXs9D6rtiOB3XAZHZuaUkjzzjlClIT3Y1iQ=",
+  "Hash": "0SAa0fXhscfwbuJFfENops3gfmiFmCK8FbxjJPh1icM=",
   "Source": "TeamGenerator2",
   "BasePath": "_content/TeamGenerator2",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\15034\\TeamGenerator\\TeamGenerator1\\TeamGenerator2\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TeamGenerator2.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\15034\\TeamGenerator\\TeamGenerator1\\TeamGenerator2\\wwwroot\\app_data\\animals.txt",
+      "SourceId": "TeamGenerator2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\15034\\TeamGenerator\\TeamGenerator1\\TeamGenerator2\\wwwroot\\",
+      "BasePath": "_content/TeamGenerator2",
+      "RelativePath": "app_data/animals.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\app_data\\animals.txt"
     },
     {
       "Identity": "C:\\Users\\15034\\TeamGenerator\\TeamGenerator1\\TeamGenerator2\\wwwroot\\css\\site.css",
