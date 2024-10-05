@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\TeamGenerator2.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\15034\\TeamGenerator\\TeamGenerator1\\TeamGenerator2\\wwwroot\\app_data\\animals.txt",
+      "PackagePath": "staticwebassets\\app_data\\animals.txt"
+    },
+    {
       "Id": "C:\\Users\\15034\\TeamGenerator\\TeamGenerator1\\TeamGenerator2\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
