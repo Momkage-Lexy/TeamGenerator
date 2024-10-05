@@ -13,17 +13,18 @@
 @* Loop through the number of groups (divs) *@
 @for (int i = 0; i < teamSize; i++)
 {
-    <div class="group">
-        <div class="groupContent"></div>
-        <ul>
-            @* Insert names into the current div/team *@
-            @for (int j = 0; j < namesPerTeam && nameIndex < totalNames; j++)
-            {
-                <li>@Model.Name[nameIndex]</li>
-                nameIndex++;
-            }
-        </ul>
+    <div class="card" style="width: 18rem;">
+        <div class="group">
+            <div class="groupContent"></div>
+            <ul class="list-group list-group-flush">
+                @* Insert names into the current div/team *@
+                @for (int j = 0; j < namesPerTeam && nameIndex < totalNames; j++)
+                {
+                    <li class="list-group-item">@Model.Name[nameIndex]</li>
+                    nameIndex++;
+                }
+            </ul>
+        </div>
     </div>
 }
 <button id="teamNames" onclick="getTeamName()">Name Teams</button>
-
