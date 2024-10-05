@@ -13,15 +13,12 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult idk(Names n)
+    [HttpPost]
+    public IActionResult Groups(Names model)
     {
-        foreach (var name in n.Name)
-            {
-                Console.WriteLine(name);  // Outputs each name to the console
-            }
-
-        return View("Index");
+        return View(model);
     }
+
 }
 
 //TODO: If I add names and submit form and then try to submit a new form, it doesn't add the first name field to the list, but it works the first time

@@ -1,0 +1,16 @@
+@model TeamGenerator2.Models.Names
+
+@{
+    ViewData["Title"] = "Groups";
+}
+
+<h2>Submitted Names and Team Size</h2>
+
+<p><strong>Team Size:</strong> @Model.TeamSize</p>
+
+<ul>
+@foreach (var name in Model.Name)
+{
+    <li>@name</li>
+}
+</ul>

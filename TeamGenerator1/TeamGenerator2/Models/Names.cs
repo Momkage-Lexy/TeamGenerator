@@ -1,10 +1,10 @@
 using System.ComponentModel.DataAnnotations;
-namespace Homework1.Models;
+namespace TeamGenerator2.Models;
 
 public class Names
 {
     [Required(ErrorMessage = "Name is required")]
-    public List<string> Name { get; set;}
+    public List<string> Name { get; set;} = new List<string>();
 
     [Required(ErrorMessage = "Name is required")]
     public int TeamSize { get; set;}
