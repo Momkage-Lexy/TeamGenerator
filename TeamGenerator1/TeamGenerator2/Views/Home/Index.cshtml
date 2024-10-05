@@ -1,12 +1,12 @@
-﻿@model Homework1.Models.Names
+﻿@model TeamGenerator2.Models.Names
 @{
     ViewData["Title"] = "Home Page";
 }
 
- <form asp-action="idk" method="get">
+ <form asp-action="Groups" method="post">
     <div class="nameFields">
         <label asp-for="Name" class="formLabel">Your name:</label>
-        <input asp-for="Name" id="name" class="formInput" name="Names[0]" method="post" />
+        <input asp-for="Name" id="name" class="formInput" name="Names[0]" />
     </div>
 
     @*Calls js onclick to add another textbox for a name*@
