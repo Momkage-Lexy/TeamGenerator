@@ -2,22 +2,26 @@
 
 @{
     ViewData["Title"] = "Groups";
+    var totalNames = Model.Name.Count;
+    var teamSize = Model.TeamSize;
+    var namesPerTeam = (int)Math.Ceiling((double)totalNames / teamSize);
+    var nameIndex = 0;
 }
 
 <h2>GROUPS</h2>
 
-
-@*Displays all names*@
-<ul>
-@foreach (var name in Model.Name)
+@* Loop through the number of groups (divs) *@
+@for (int i = 0; i < teamSize; i++)
 {
-    <li>@name</li>
-}
-</ul>
-
-
-@*Displays the amount of sections for team size*@
-@for (int i = 0; i < Model.TeamSize; i++)
-{
-    <div><h1>Hello</h1></div>
+    <div>
+        <h3>Team @i</h3>
+        <ul>
+            @* Insert names into the current div/team *@
+            @for (int j = 0; j < namesPerTeam && nameIndex < totalNames; j++)
+            {
+                <li>@Model.Name[nameIndex]</li>
+                nameIndex++;
+            }
+        </ul>
+    </div>
 }
