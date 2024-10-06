@@ -2,7 +2,7 @@
 
 @{
     ViewData["Title"] = "Groups";
-    var totalNames = Model.Name.Count;
+    var totalNames = Model.NameList.Count;
     var teamSize = Model.TeamSize;
     var namesPerTeam = (int)Math.Ceiling((double)totalNames / teamSize);
     var nameIndex = 0;
@@ -10,17 +10,15 @@
 
 <h2>GROUPS</h2>
 
-@* Loop through the number of groups (divs) *@
 @for (int i = 0; i < teamSize; i++)
 {
     <div class="card" style="width: 18rem;">
         <div class="group">
             <div class="groupContent"></div>
             <ul class="list-group list-group-flush">
-                @* Insert names into the current div/team *@
                 @for (int j = 0; j < namesPerTeam && nameIndex < totalNames; j++)
                 {
-                    <li class="list-group-item">@Model.Name[nameIndex]</li>
+                    <li class="list-group-item">@Model.NameList[nameIndex]</li>
                     nameIndex++;
                 }
             </ul>

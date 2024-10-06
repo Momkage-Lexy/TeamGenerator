@@ -3,20 +3,16 @@
     ViewData["Title"] = "Home Page";
 }
 
- <form asp-action="Groups" method="post">
-    <div class="nameFields">
-        <label asp-for="Name" class="formLabel">Your name:</label>
-        <input asp-for="Name" id="name" class="formInput" name="Names[0]" />
+<form asp-action="Groups" method="post">
+    <div class="form-group">
+        <label asp-for="NameInput" class="formLabel">Names (one per line):</label>
+        <textarea asp-for="NameInput" class="formInput" rows="10"></textarea>
     </div>
 
-    @*Calls js onclick to add another textbox for a name*@
-    <input type="button" onclick="addNameField()">add</input>
-    <div id="newField">
-        @*new textbox goes here*@
-    </div>
     <div class="teamFields">
-        <label asp-for="TeamSize" class="formLabel">Team Size :</label>
-        <input asp-for="TeamSize" id="teamSize" class="formInput" name="teamSize" />
+        <label asp-for="TeamSize" class="formLabel">Team Size:</label>
+        <input asp-for="TeamSize" class="formInput" />
     </div>
+
     <button type="submit" class="formButton">Get Teams</button>
- </form>
+</form>
