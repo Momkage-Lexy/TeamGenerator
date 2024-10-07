@@ -19,4 +19,65 @@ html {
 
 body {
   margin-bottom: 60px;
+  background-color: rgb(127, 218, 185);
+  background-size: cover; 
+}
+
+
+.formDiv {
+  background-color: white;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#teamsInput {
+  width: 100%;
+  max-width: 100%;
+}
+
+#namesInput {
+  width: 100%;
+  max-width: 100%;
+}
+
+h2 {
+  font-family: "Lilita One", sans-serif;
+}
+
+.formButton {
+  width: 100%;
+  max-width: 100%;
+  background-color: #066253;
+  border-radius: 10px;
+  border-style: none;
+  padding: 3%;
+  color:white;
+  box-shadow: 10px 10px 5px #25907e inset;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.formRow{
+  border-radius: 5%;
+}
+
+.formLabel{
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.intro {
+  text-align: center;
+}
+
+
+#introText {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.formInput {
+  background-color: rgb(227, 227, 227);
+  border: none;
 }

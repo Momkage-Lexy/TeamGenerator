@@ -5,8 +5,20 @@
       "PackagePath": "staticwebassets\\TeamGenerator2.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\15034\\TeamGenerator\\TeamGenerator1\\TeamGenerator2\\wwwroot\\app_data\\Team.png",
+      "PackagePath": "staticwebassets\\app_data\\Team.png"
+    },
+    {
       "Id": "C:\\Users\\15034\\TeamGenerator\\TeamGenerator1\\TeamGenerator2\\wwwroot\\app_data\\animals.txt",
       "PackagePath": "staticwebassets\\app_data\\animals.txt"
+    },
+    {
+      "Id": "C:\\Users\\15034\\TeamGenerator\\TeamGenerator1\\TeamGenerator2\\wwwroot\\app_data\\hand-gesture-expressing-different-feelings.jpg",
+      "PackagePath": "staticwebassets\\app_data\\hand-gesture-expressing-different-feelings.jpg"
+    },
+    {
+      "Id": "C:\\Users\\15034\\TeamGenerator\\TeamGenerator1\\TeamGenerator2\\wwwroot\\app_data\\pink-background-with-window-shadow-reflected-wall.jpg",
+      "PackagePath": "staticwebassets\\app_data\\pink-background-with-window-shadow-reflected-wall.jpg"
     },
     {
       "Id": "C:\\Users\\15034\\TeamGenerator\\TeamGenerator1\\TeamGenerator2\\wwwroot\\css\\site.css",
