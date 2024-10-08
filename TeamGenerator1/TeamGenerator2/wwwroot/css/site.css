@@ -81,3 +81,57 @@ h2 {
   background-color: rgb(227, 227, 227);
   border: none;
 }
+
+@keyframes flyInFromLeft {
+  from {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+.card {
+  animation: flyInFromLeft 0.5s ease-in-out forwards;
+  opacity: 0;
+  border: 2px solid rgb(245, 235, 220);
+  box-shadow: 5px 5px 5px #066253;
+}
+
+
+.groupContent {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 2%;
+  text-align: center;
+  background-color: #25907e;
+  border: 1px solid rgb(245, 235, 220);
+  color: rgb(245, 235, 220);
+}
+
+.list-group-item {
+  background-color: rgb(245, 235, 220);
+  font-family: "Libre Franklin", sans-serif;
+  border: 1px solid rgb(179, 170, 157);
+}
+
+.buttons {
+  background-color: #066253;
+  border-radius: 10px;
+  border-style: none;
+  padding: 5%;
+  color:white;
+  box-shadow: 10px 10px 5px #25907e inset;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: "Libre Franklin", sans-serif;
+  width: 100%;
+}
+
+#create {
+  color: white;
+  text-decoration: none;
+}
