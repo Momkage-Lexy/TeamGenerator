@@ -14,12 +14,14 @@
         <div class="col-md-4 mb-3">
             <div class="card" style="width: 100%; animation-delay: @(i * 0.1)s;">
                 <div class="group">
-                    <div class="groupContent"></div>
+                    <div class="groupContent">
+                        <h5>Team @(i + 1)</h5>
+                    </div>
                     <ul class="list-group list-group-flush">
-                        @for (int j = 0; j < namesPerTeam && nameIndex < totalNames; j++)
+                        @for (int j = 0; j < namesPerTeam && (i + j * teamSize) < totalNames; j++)
                         {
-                            <li class="list-group-item">@Model.NameList[nameIndex]</li>
-                            nameIndex++;
+                            int index = i + j * teamSize;
+                            <li class="list-group-item">@Model.NameList[index]</li>
                         }
                     </ul>
                 </div>
@@ -27,10 +29,10 @@
         </div>
     }
 </div>
+
 <br><br><br>
 <div class="row">
     <div class="col-md-2"><button id="teamNames" class="buttons" onclick="getTeamName()">Name Teams</button></div>
     <div class="col-md-2"><button class="buttons"><a href="/Home" id="create">Create More Teams</a></button></div>
-    <div class="col-md-2"><button class="buttons">Export</button></div>
 </div>
 

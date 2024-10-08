@@ -2,6 +2,7 @@
 @{
     ViewData["Title"] = "Home Page";
 }
+
 <div class="row g-0 formRow">
     <div class="col-md-6 imageCol">
         <img src="/app_data/hand-gesture-expressing-different-feelings.jpg" class="" alt="Hand gesture expressing different feelings" />
@@ -12,18 +13,20 @@
                 <h2 class="intro">Welcome!</h2>
                 <p class="intro" id="introText">Enter your team info below: </p>
                 <label asp-for="NameInput" class="formLabel">Names (one per line):</label><br>
-                <textarea asp-for="NameInput" class="formInput" id="namesInput" rows="5"></textarea>
+                <textarea asp-for="NameInput" class="formInput" id="namesInput" rows="5" data-val="true" data-val-required="Please enter your names"></textarea>
+                <span asp-validation-for="NameInput" class="text-danger"></span>
             </div>
             <br>
             <div class="teamFields">
                 <label asp-for="TeamSize" class="formLabel">Number of Teams:</label><br>
-                <input asp-for="TeamSize" class="formInput" id="teamsInput" />
+                <input asp-for="TeamSize" class="formInput" id="teamsInput" data-val="true" data-val-required="Please enter Team size" />
+                <span asp-validation-for="TeamSize" class="text-danger"></span>
             </div>
             <br><br><br>
             <button type="submit" class="formButton">Get Teams</button>
         </form>
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
     </div>
 </div>
-
 
 

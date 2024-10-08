@@ -4,17 +4,18 @@ namespace TeamGenerator2.Models;
 public class Names
 {
     [Required(ErrorMessage = "Name is required")]
+    [RegularExpression(@"^([a-zA-Z\s,.\-_'’]+\r?\n?)*$", ErrorMessage = "Names can only contain letters, spaces, and the characters ,.-_'")]
     public string NameInput { get; set; } = string.Empty;
 
     [Required(ErrorMessage = "Team size is required")]
+    [Range(2, 10, ErrorMessage = "Team size must be between 2 and 10.")]
     public int TeamSize { get; set; }
 
     public List<string> NameList 
     { 
         get 
         {
-            // Split the input string by newline into a list of names
-            return NameInput.Split(new[] { "\r\n", "\r", "\n" }, StringSplitOptions.RemoveEmptyEntries).ToList();
+            return NameInput?.Split(new[] { "\r\n", "\r", "\n" }, StringSplitOptions.RemoveEmptyEntries).ToList() ?? new List<string>();
         }
     }
 
