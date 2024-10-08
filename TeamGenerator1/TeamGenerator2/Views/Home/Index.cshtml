@@ -14,18 +14,18 @@
                 <p class="intro" id="introText">Enter your team info below: </p>
                 <label asp-for="NameInput" class="formLabel">Names (one per line):</label><br>
                 <textarea asp-for="NameInput" class="formInput" id="namesInput" rows="5" data-val="true" data-val-required="Please enter your names"></textarea>
-                <span asp-validation-for="NameInput" class="text-danger"></span>
+                <span asp-validation-for="NameInput" class="validation"></span>
             </div>
             <br>
             <div class="teamFields">
                 <label asp-for="TeamSize" class="formLabel">Number of Teams:</label><br>
                 <input asp-for="TeamSize" class="formInput" id="teamsInput" data-val="true" data-val-required="Please enter Team size" />
-                <span asp-validation-for="TeamSize" class="text-danger"></span>
+                <span asp-validation-for="TeamSize" class="validation"></span>
             </div>
             <br><br><br>
             <button type="submit" class="formButton">Get Teams</button>
         </form>
-        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div asp-validation-summary="ModelOnly" class="validation"></div>
     </div>
 </div>
 

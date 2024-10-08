@@ -135,3 +135,11 @@ h2 {
   color: white;
   text-decoration: none;
 }
+
+.validation {
+  color: rgb(236, 37, 90);
+}
+
+.input-validation-error {
+  border: 2px solid rgb(236, 37, 90);
+}
