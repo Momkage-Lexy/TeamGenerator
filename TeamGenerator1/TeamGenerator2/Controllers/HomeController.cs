@@ -17,7 +17,7 @@ public class HomeController : Controller
     public IActionResult Groups(Names model)
     {
         Random random = new Random();
-        var names = model.NameList; // Use NameList here
+        var names = model.NameList; 
 
         int n = names.Count;
         for (int i = n - 1; i > 0; i--)
@@ -26,7 +26,7 @@ public class HomeController : Controller
             (names[j], names[i]) = (names[i], names[j]);
         }
 
-        model.NameInput = string.Join("\n", names); // Update NameInput in case you want to display the shuffled list later
+        model.NameInput = string.Join("\n", names); 
         return View(model);
     }
 
